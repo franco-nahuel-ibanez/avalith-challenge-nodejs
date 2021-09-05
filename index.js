@@ -16,11 +16,11 @@ app.get('/', (req, res) => {
 
 //ejercicio n°2
 app.get("/file", async (req, res) => {
-  try {
-    res.send(await fs.readFile("./index.txt", "utf-8"));
-  } catch (error) {
-    res.send(error);
-  }
+	try {
+    		res.send(await fs.readFile("./index.txt", "utf-8"));
+  	} catch (error) {
+    		res.send(error);
+  	}
 });
 
 
